@@ -1,0 +1,20 @@
+Task 1:
+
+repeat_purchase_flag:
+This column represents the outcome we want to predict (whether a customer makes a repeat purchase within 30 days), so it is the target variable.
+
+discount_used_on_repeat_order:
+This column contains information that is only known after the repeat purchase happens, 
+so including it would leak future information into the model and artificially inflate performance.
+
+
+Task 2:
+
+1. Data Preprocessing & Cleaning:
+
+Before training any model, the data must be checked for missing values, incorrect formats, and outliers; otherwise, 
+the model may learn from noisy or invalid data and produce unreliable predictions.
+
+2. Train-Test Split (or Validation Strategy):
+
+Splitting the data into training and testing sets ensures that the model is evaluated on unseen data, helping to measure real-world performance and avoid overfitting.
